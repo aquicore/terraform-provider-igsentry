@@ -23,9 +23,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Unshallow
-        run: git fetch --prune --unshallow
-
       - uses: actions/setup-go@v3
         with:
           go-version-file: "go.mod"
